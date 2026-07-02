@@ -1,0 +1,59 @@
+# Visual Studio
+.vs/
+bin/
+obj/
+
+# Rider
+.idea/
+
+# VS Code
+.vscode/
+
+# Node
+node_modules/
+
+# Angular
+dist/
+.angular/
+coverage/
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.*
+
+# SQL
+*.mdf
+*.ldf
+
+# User files
+*.user
+*.suo
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Publish
+publish/
+
+# Test Results
+TestResults/
+
+# NuGet
+packages/
+
+# Secrets
+appsettings.Development.json
+
+# Temporary
+temp/
+tmp/
+
+# npm
+
+
+# Yarn
+yarn.lock
