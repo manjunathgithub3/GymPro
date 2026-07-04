@@ -1,0 +1,9 @@
+<Solution>
+  <Project Path="GymPro.API/GymPro.API.csproj" />
+  <Project Path="GymPro.Application/GymPro.Application.csproj" />
+  <Project Path="GymPro.Contracts/GymPro.Contracts.csproj" />
+  <Project Path="GymPro.Domain/GymPro.Domain.csproj" />
+  <Project Path="GymPro.Infrastructure/GymPro.Infrastructure.csproj" />
+  <Project Path="GymPro.Persistence/GymPro.Persistence.csproj" />
+  <Project Path="GymPro.Shared/GymPro.Shared.csproj" />
+</Solution>
