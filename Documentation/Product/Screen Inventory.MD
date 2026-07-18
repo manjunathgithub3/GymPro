@@ -1,0 +1,1 @@
+It will list every screen in the application.

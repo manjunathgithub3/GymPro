@@ -1,0 +1,385 @@
+Functional Requirements
+Non-Functional Requirements
+User Roles
+Business Rules
+Use Cases
+=================================
+The SRS says:
+
+"Exactly what the Member Management module must do."
+
+This is the document that developers, testers, and QA teams will follow.\
+=============================================
+# GymPro - Software Requirements Specification (SRS)
+
+Version: 1.0 MVP
+Status: Draft
+Author: Manjunath CMR
+Project: GymPro - Gym Management SaaS
+Date: 2026
+
+---
+
+# Document Information
+
+| Version | Date | Author | Status |
+|----------|------------|----------------|---------|
+| 1.0 | 2026 | Manjunath CMR | Draft |
+
+---
+
+# 1. Introduction
+
+## Purpose
+
+This Software Requirements Specification (SRS) defines the functional and non-functional requirements for the GymPro MVP. It serves as the technical blueprint for developers, testers, and stakeholders throughout the software development lifecycle.
+
+---
+
+## Scope
+
+GymPro is a cloud-based Gym Management SaaS platform that enables gym owners to efficiently manage their business operations including members, memberships, trainers, attendance, payments, reports, and administration.
+
+The MVP focuses on delivering the essential functionality required for daily gym operations while providing a scalable foundation for future enhancements.
+
+---
+
+# 2. Stakeholders
+
+- Super Admin
+- Gym Owner
+- Manager
+- Receptionist
+- Trainer
+- Member
+- Development Team
+- QA Team
+- Support Team
+
+---
+
+# 3. Functional Requirements
+
+## Authentication
+
+### FR-001
+
+The system shall allow users to securely log in using email and password.
+
+### FR-002
+
+The system shall support JWT-based authentication.
+
+### FR-003
+
+The system shall allow users to change their password.
+
+### FR-004
+
+The system shall support forgot password functionality.
+
+### FR-005
+
+The system shall authorize users based on assigned roles.
+
+---
+
+## Organization Management
+
+### FR-006
+
+The system shall allow Super Admin to register a Gym.
+
+### FR-007
+
+The system shall support multiple branches for a gym.
+
+### FR-008
+
+The system shall allow updating gym profile information.
+
+---
+
+## Member Management
+
+### FR-009
+
+The system shall allow staff to register new members.
+
+### FR-010
+
+The system shall allow uploading member photographs.
+
+### FR-011
+
+The system shall store emergency contact information.
+
+### FR-012
+
+The system shall store medical information.
+
+### FR-013
+
+The system shall support searching members.
+
+### FR-014
+
+The system shall allow updating member information.
+
+### FR-015
+
+The system shall allow deactivating members.
+
+---
+
+## Membership Management
+
+### FR-016
+
+The system shall allow creation of membership plans.
+
+### FR-017
+
+The system shall allow assigning memberships.
+
+### FR-018
+
+The system shall support membership renewal.
+
+### FR-019
+
+The system shall support freezing memberships.
+
+### FR-020
+
+The system shall automatically calculate membership expiry.
+
+---
+
+## Payment Management
+
+### FR-021
+
+The system shall record payments.
+
+### FR-022
+
+The system shall support multiple payment methods.
+
+### FR-023
+
+The system shall support partial payments.
+
+### FR-024
+
+The system shall generate invoices.
+
+### FR-025
+
+The system shall display payment history.
+
+---
+
+## Attendance
+
+### FR-026
+
+The system shall allow manual attendance.
+
+### FR-027
+
+The system shall support QR attendance.
+
+### FR-028
+
+The system shall display attendance history.
+
+---
+
+## Trainer Management
+
+### FR-029
+
+The system shall manage trainer profiles.
+
+### FR-030
+
+The system shall assign members to trainers.
+
+### FR-031
+
+The system shall track PT sessions.
+
+---
+
+## Dashboard
+
+### FR-032
+
+The dashboard shall display active members.
+
+### FR-033
+
+The dashboard shall display expiring memberships.
+
+### FR-034
+
+The dashboard shall display revenue statistics.
+
+### FR-035
+
+The dashboard shall display today's attendance.
+
+---
+
+## Reports
+
+### FR-036
+
+The system shall generate revenue reports.
+
+### FR-037
+
+The system shall generate attendance reports.
+
+### FR-038
+
+The system shall generate payment reports.
+
+### FR-039
+
+The system shall generate membership reports.
+
+---
+
+# 4. Non-Functional Requirements
+
+## Performance
+
+- Dashboard should load within 3 seconds.
+- API response time should be less than 500 milliseconds for normal operations.
+- Support at least 500 concurrent users per tenant.
+
+---
+
+## Security
+
+- JWT Authentication
+- Password Hashing
+- HTTPS Only
+- Role-Based Authorization
+- SQL Injection Protection
+- XSS Protection
+- CSRF Protection
+- Audit Logging
+
+---
+
+## Reliability
+
+- Daily Database Backup
+- Error Logging
+- Global Exception Handling
+- Health Checks
+
+---
+
+## Scalability
+
+The application shall support:
+
+- Multiple Gyms
+- Multiple Branches
+- Thousands of Members
+- Future Mobile Applications
+
+---
+
+## Availability
+
+Target Availability:
+
+99.9%
+
+---
+
+# 5. User Stories
+
+## Receptionist
+
+"As a Receptionist, I want to register a new member so that I can quickly enroll customers."
+
+---
+
+## Gym Owner
+
+"As a Gym Owner, I want to see today's revenue so that I can monitor my business."
+
+---
+
+## Trainer
+
+"As a Trainer, I want to assign workout plans so that members can follow personalized exercises."
+
+---
+
+## Member
+
+"As a Member, I want to view my membership details so that I know my expiry date."
+
+---
+
+# 6. Business Constraints
+
+- Internet connection required
+- SQL Server database
+- Angular Web Application
+- ASP.NET Core Web API
+- Modern Web Browser
+
+---
+
+# 7. Assumptions
+
+- Every member belongs to one Gym.
+- Every branch belongs to one Gym.
+- Every payment belongs to one membership.
+- Every trainer belongs to one gym.
+- Every user has exactly one role.
+
+---
+
+# 8. Future Enhancements
+
+- Mobile Application
+- WhatsApp Integration
+- AI Workout Generator
+- AI Diet Planner
+- Online Payments
+- Inventory Management
+- Payroll Management
+- White Label Support
+
+---
+
+# 9. Acceptance Criteria
+
+The MVP shall be considered complete when:
+
+- Authentication is fully functional.
+- Member Management is operational.
+- Membership Management is operational.
+- Payments are functional.
+- Attendance is functional.
+- Reports are available.
+- Dashboard is available.
+- Role-Based Authorization is implemented.
+
+---
+
+# 10. Document Status
+
+Draft
+
+Next Document:
+Business Rules

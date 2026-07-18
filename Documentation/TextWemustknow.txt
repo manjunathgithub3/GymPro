@@ -1,0 +1,4 @@
+multi-tenant  - A multi-tenant architecture is a system design where a single instance of a software application serves multiple customers (or "tenants").
+SaaS - SaaS stands for Software as a Service. It is a cloud-based software delivery model where providers host applications and make them available to users over the internet via a subscription, usually on a pay-as-you-go basis
+
+

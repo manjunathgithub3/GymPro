@@ -1,0 +1,8 @@
+.net:
+================
+dotnet new sln -n GymPro - for creating new .net solution.
+dotnet new webapi -n GymPro.API
+dotnet new classlib -n GymPro.Domain
+dotnet new classlib -n GymPro.Application
+dotnet new classlib -n GymPro.Infrastructure
+dotnet new classlib -n GymPro.Shared
