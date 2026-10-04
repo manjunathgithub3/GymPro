@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\GymPro.Domain\GymPro.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
